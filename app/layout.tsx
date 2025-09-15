@@ -9,7 +9,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Drop Drive - Secure Data Wiping Solution",
   description: "Professional data wiping and sanitization software with NIST compliance",
-  generator: "v0.app",
+  generator: "Sagar Jain",
 }
 
 export default function RootLayout({
