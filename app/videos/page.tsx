@@ -87,10 +87,7 @@ export default function VideosPage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                   >
-                    <Badge className="absolute top-4 left-4">
-                      <Clock className="mr-1 h-3 w-3" />
-                      8:42
-                    </Badge>
+                   
                   </motion.div>
                 </motion.div>
                 <CardHeader>
@@ -156,10 +153,7 @@ export default function VideosPage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                   >
-                    <Badge className="absolute top-4 left-4">
-                      <Clock className="mr-1 h-3 w-3" />
-                      12:15
-                    </Badge>
+                    
                   </motion.div>
                 </motion.div>
                 <CardHeader>
