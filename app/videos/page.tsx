@@ -74,23 +74,13 @@ export default function VideosPage() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <img
-                    src="/securewipe-application-interface-showing-data-wipi.jpg"
-                    alt="Drop Drive App Walkthrough"
+                  <video
+                    src="/dataWipe.mp4"
+                    controls
+               
+                    poster="/bootable-usb-creation-tutorial-with-rufus-and-bale.png"
                     className="w-full h-full object-cover"
                   />
-                  <motion.div
-                    className="absolute inset-0 bg-black/20 flex items-center justify-center"
-                    whileHover={{ backgroundColor: "rgba(0,0,0,0.4)" }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                      <Button size="lg" className="rounded-full">
-                        <Play className="mr-2 h-6 w-6" />
-                        Play Video
-                      </Button>
-                    </motion.div>
-                  </motion.div>
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -154,23 +144,12 @@ export default function VideosPage() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <img
-                    src="/bootable-usb-creation-tutorial-with-rufus-and-bale.jpg"
-                    alt="Creating Bootable USB Tutorial"
+                  <video
+                    src="/drive.mp4"
+                    controls
+                         poster="/securewipe-application-interface-showing-data-wipi.png"
                     className="w-full h-full object-cover"
                   />
-                  <motion.div
-                    className="absolute inset-0 bg-black/20 flex items-center justify-center"
-                    whileHover={{ backgroundColor: "rgba(0,0,0,0.4)" }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
-                      <Button size="lg" className="rounded-full">
-                        <Play className="mr-2 h-6 w-6" />
-                        Play Video
-                      </Button>
-                    </motion.div>
-                  </motion.div>
                   <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
