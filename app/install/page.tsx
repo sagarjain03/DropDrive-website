@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Download, Monitor, Smartphone, HardDrive, Shield, CheckCircle, AlertTriangle } from "lucide-react"
+import Link from "next/link"
 
 export default function InstallPage() {
   return (
@@ -19,7 +20,7 @@ export default function InstallPage() {
               Get the latest version of Drop Drive for your platform
             </p>
             <Badge variant="secondary" className="mt-4">
-              Version 3.2.1 - Released December 2024
+              Version 2.1.0 - Released December 2024
             </Badge>
           </div>
 
@@ -47,21 +48,20 @@ export default function InstallPage() {
                       <p className="font-semibold">Drop Drive Installer</p>
                       <p className="text-sm text-muted-foreground">Windows 10/11 (64-bit) • 45.2 MB</p>
                     </div>
-                    <Button>
-                      <Download className="mr-2 h-4 w-4" />
-                      Download
+                    <Button asChild>
+                      <Link href="https://github.com/yogimait/Drop_Drive_Application/releases/download/v2.1.0/DropDrive.Setup.2.1.0.exe">
+                        <Download className="mr-2 h-4 w-4" />
+                        Download
+                      </Link>
                     </Button>
                   </div>
 
                   <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
                     <div>
                       <p className="font-semibold">Portable Version</p>
-                      <p className="text-sm text-muted-foreground">No installation required • 52.1 MB</p>
+                      <p className="text-sm text-muted-foreground">Not available right now</p>
                     </div>
-                    <Button variant="outline">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download
-                    </Button>
+                    <span className="text-muted-foreground">Coming soon</span>
                   </div>
                 </div>
 
@@ -94,34 +94,25 @@ export default function InstallPage() {
                   <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
                     <div>
                       <p className="font-semibold">Ubuntu/Debian Package</p>
-                      <p className="text-sm text-muted-foreground">.deb package • 38.7 MB</p>
+                      <p className="text-sm text-muted-foreground">Not available right now</p>
                     </div>
-                    <Button>
-                      <Download className="mr-2 h-4 w-4" />
-                      Download
-                    </Button>
+                    <span className="text-muted-foreground">Coming soon</span>
                   </div>
 
                   <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
                     <div>
                       <p className="font-semibold">CentOS/RHEL Package</p>
-                      <p className="text-sm text-muted-foreground">.rpm package • 39.1 MB</p>
+                      <p className="text-sm text-muted-foreground">Not available right now</p>
                     </div>
-                    <Button variant="outline">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download
-                    </Button>
+                    <span className="text-muted-foreground">Coming soon</span>
                   </div>
 
                   <div className="flex items-center justify-between p-3 bg-muted rounded-lg">
                     <div>
                       <p className="font-semibold">Generic Binary</p>
-                      <p className="text-sm text-muted-foreground">Tar.gz archive • 41.3 MB</p>
+                      <p className="text-sm text-muted-foreground">Not available right now</p>
                     </div>
-                    <Button variant="outline">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download
-                    </Button>
+                    <span className="text-muted-foreground">Coming soon</span>
                   </div>
                 </div>
 
@@ -157,9 +148,9 @@ export default function InstallPage() {
                     <Badge variant="outline">ISO Image</Badge>
                     <span className="text-sm text-muted-foreground">Drop Drive Live • 1.2 GB</span>
                   </div>
-                  <Button size="lg">
+                  <Button disabled size="lg">
                     <Download className="mr-2 h-5 w-5" />
-                    Download ISO
+                    Not Available Right Now
                   </Button>
                 </div>
                 <div>
@@ -197,11 +188,11 @@ export default function InstallPage() {
                     <span className="text-sm text-muted-foreground">Version 2.1.0 • 12.4 MB</span>
                   </div>
                   <div className="flex gap-3">
-                    <Button>
+                    <Button disabled>
                       <Download className="mr-2 h-4 w-4" />
-                      Download APK
+                      Not Available Right Now
                     </Button>
-                    <Button variant="outline">Google Play</Button>
+                    <Button variant="outline" disabled>Google Play</Button>
                   </div>
                 </div>
                 <div>
